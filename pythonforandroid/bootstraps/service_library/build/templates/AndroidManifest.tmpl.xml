@@ -15,6 +15,10 @@
                  android:process=":service_{{ name }}"
                  android:exported="true" />
         {% endfor %}
+        <!-- Add your custom Java service below -->
+        <service
+            android:name="com.clickandcollect.clickandcollectsa.ServiceFcmservice"
+            android:exported="true" />
     </application>
 
 </manifest>
